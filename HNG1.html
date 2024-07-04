@@ -1,0 +1,163 @@
+<html>
+<head>
+<title> </title>
+</head>
+<style>
+\*  The red texts identify as a link. *\
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+   display: flex;
+   flex-direction: row;
+   height: 60px;
+   border-bottom: 2px solid black;
+   justify-content: space-between;
+   align-items: center;
+   overflow: hidden;
+   margin-bottom: 70px;
+}
+
+.left-section{
+  width: 300px;
+  margin-left: 50px;
+}
+
+.icon{
+  font-size: 30px;
+  letter-spacing: 7px;
+  font-weight: bold;
+}
+
+.info{
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+.pic-container{
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.slackProfilePicture{
+  width: 779px;
+  height: 993px;
+  object-fit: contain;
+}
+
+.slackDisplayName{
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: none;
+}
+
+.slackEmail{
+  font-size: 20px;
+  margin-top: -25px;
+}
+
+.slackEmail a{
+  text-decoration: none;
+  color: red;
+}
+
+.indent{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.details{
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.aims{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hngLink, .keywordLink, .scrapeanywebLink{
+  color: red;
+  text-decoration: none;
+  margin-right: 5px;
+}
+</style>
+
+
+<body>
+<div class="container">
+
+<div class="left-section">
+<p class="icon">INTERNSHIP</p>
+</div>
+
+</div>
+
+
+<div class="info">
+<img src="IMG_9844.JPG" data-testid="slackProfilePicture" class="slackProfilePicture">
+
+<p data-testid="slackDisplayName" class="slackDisplayName">
+Okafor Chukuwuebuka
+</p>
+
+<p data-testid="slackEmail" class="slackEmail">
+<a href="https://mail.google.com/mail/mu/mp/823/#tl/priority/%5Esmartlabel_personal">
+oebuka13@gmail.com 
+</a>
+
+<span class="indent">|</span>
+
+		<script>
+		function today()
+		{
+			var day = new Date();
+			var dayNames = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", 
+							"Thursday", "Friday", "Saturday");
+			var x = document.getElementById("currentDay");
+			x.innerHTML = dayNames[day.getDay()];
+		}
+		</script>
+	<body onload="today()">
+		<span data-testid="currentDay" id="currentDay"></span>
+
+
+<span data-testid="currentDayUTC" id="datetime"></span>
+
+<script>
+			
+  var now = new Date();
+  var datetime = now.toLocaleString();
+  document.getElementById("datetime").innerHTML = datetime;
+</script>
+</p>
+
+
+<p class="details">AIMS AND OBJECTIVES;</p>
+
+<p class="aims">My name is Okafor Chukwuebuka. I am excited to be a part of this years HNG internship because it has given me an oppurtunity to further develop my skill over the next two years which in hand would give me a chance to land a remote job in a top firm anywhere in the would. This oppurtunity came at the right time due to the fact that over the last couple of months I have been demotivated because of a couple of reason which are personal but I feel with the help of the mentors at HNG and the tasks that would be given during the internship, I would have a chance to improve my skill and also get to met new friends which would also help push me just a little bit further in the tech world.
+</p>
+
+<a href="http://hng.tech/learn" data-testid="hngLink" class="hngLink">HNG INTERNSHIP</a>
+
+<a href="https://keyword.dog/" data-testid="keywordLink" class="keywordLink">
+KEYWORD DOG
+</a>
+
+<a href="https://scrapeanyweb.site/" data-testid="scrapanywebLink" class="scrapeanywebLink">
+SCRAPEANYWEB
+</a>
+</div>
+
+</body>
+</html>
